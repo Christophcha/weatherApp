@@ -1,9 +1,3 @@
-//const loc = document.querySelector('.location');
-//const temp = document.querySelector('.temp');
-//const icon = document.querySelector('.icon');
-//const description = document.querySelector('.description');
-//const humidity = document.querySelector('.humidity');
-
 
 window.addEventListener('load', (event) => {
 
@@ -54,11 +48,6 @@ function weatherData(data) {
     let { icon } = data.weather[0];
     let { description } = data.weather[0];
 
-    // let iconCode = icon;
-    //const weatherIcon = document.querySelector('.icon').innerHTML = '<img src =\'http://openweathermap.org/img/w/' + icon + '.png\'>';
-    // let img = new Image();
-    // img.src = 'http://openweathermap.org/img/w/' + iconCode + '.png';
-
     geoLocation.innerHTML = name;
     temperature.innerHTML = temp.toFixed(0) + "°";
     temperatureHigh.innerHTML = "H: " + temp_max.toFixed(0) + "°";
@@ -69,11 +58,6 @@ function weatherData(data) {
 
     humidityPercent.innerHTML += humidity + "%";
     windSpeed.innerHTML += speed.toFixed(0) + " mph";
-
-
-    //weatherIcon.innerHTML = icon; // shows icon code
-    //document.body.appendChild(img);
-    //weatherIcon.innerHTML = `http://openweathermap.org/img/w/` + iconCode + ".png";
 
 }
 
