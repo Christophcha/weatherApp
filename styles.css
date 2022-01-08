@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after{
+   box-sizing: border-box; 
+   margin: 0;
+}
+
+:root{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-mid: 500;
+    --fw-bold: 900;
+}
+
+/* typography ----------------------------------------------------------*/
+.container{
+    font-size: 1.5em;
+}
+
+h1{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-mid);
+}
+
+.temp{
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-mid);
+    font-size: 2.5em;
+}
+
+.temp-min-max{
+    font-family: var(--ff-secondary);
+}
+
+.description,
+.humidity,
+.wind{
+    font-family: var(--ff-secondary); 
+}
+
+.humidity-text,
+.wind-text{
+    font-size: .75em;
+}
+
+/* styles ----------------------------------------------------------------*/
+.container{
+    text-align: center;
+}
+
+.temp-min-max{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5em;
+    gap: 1em;
+} 
+
+img{
+    width: 100px; 
+}
+
+div.icon{
+    height: 75px;
+}
+
+.temp{
+    padding-left: .5em;
+}
+
+.hidden{
+    display: none;
+}
+
+.date{
+    margin-right: 1.5em;
+} 
+
+
+
+
+
+
